@@ -25,4 +25,9 @@ describe Account do
   it 'an account can accept a withdrawal' do
     expect { @account.withdraw(10) }.not_to raise_error
   end
+
+  it 'a withdrawal makes the balance go down by the right amount' do
+    @account.withdraw(10)
+    expect(@account.balance).to eq(-10)
+  end
 end
