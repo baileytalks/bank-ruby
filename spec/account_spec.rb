@@ -12,4 +12,8 @@ describe Account do
   it 'an account has a balance' do
     expect(@account.balance).to eq 0
   end
+
+  it 'can accept a deposit' do
+    expect { @account.deposit(100) }.not_to raise_error
+  end
 end
