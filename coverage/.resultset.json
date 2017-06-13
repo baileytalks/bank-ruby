@@ -63,6 +63,23 @@
         null,
         null
       ],
+      "/Users/baileykursar/Projects/bank-ruby/spec/printer_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/baileykursar/Projects/bank-ruby/lib/printer.rb": [
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/baileykursar/Projects/bank-ruby/spec/statement_spec.rb": [
         1,
         null,
@@ -130,6 +147,6 @@
         null
       ]
     },
-    "timestamp": 1497375857
+    "timestamp": 1497376223
   }
 }
