@@ -9,3 +9,7 @@ SimpleCov.start
 def deposit_100
   @account.deposit(100)
 end
+
+def create_statement
+  @statement = Statement.new([])
+end

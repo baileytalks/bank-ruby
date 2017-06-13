@@ -62,8 +62,24 @@
         3,
         null,
         null
+      ],
+      "/Users/baileykursar/Projects/bank-ruby/spec/statement_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/baileykursar/Projects/bank-ruby/lib/statement.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1497349076
+    "timestamp": 1497349436
   }
 }
