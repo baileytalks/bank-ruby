@@ -1,3 +1,4 @@
+## This class has responsibility for holding and managing a balance
 class Account
   attr_reader :balance
 
