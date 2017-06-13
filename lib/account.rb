@@ -11,18 +11,18 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    save_transaction
+    save_transaction(amount)
   end
 
   def withdraw(amount)
     @balance -= amount
-    save_transaction
+    save_transaction(-amount)
   end
 
   private
 
-  def save_transaction
-    @transactions.push([date, @balance])
+  def save_transaction(amount)
+    @transactions.push([date, amount, @balance])
   end
 
   def date
