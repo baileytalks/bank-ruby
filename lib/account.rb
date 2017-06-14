@@ -1,4 +1,4 @@
-require 'date'
+require './lib/statement.rb'
 
 ## This class has responsibility for holding and managing a balance
 class Account
@@ -17,6 +17,12 @@ class Account
   def withdraw(amount)
     @balance -= amount
     save_transaction(-amount)
+  end
+
+  def statement
+    statement = Statement.new(@transactions)
+    statement.printer
+    nil
   end
 
   private

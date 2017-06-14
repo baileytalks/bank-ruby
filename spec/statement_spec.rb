@@ -2,11 +2,7 @@ require 'statement'
 
 describe Statement do
   before(:each) do
-    @statement = Statement.new([['date', 10, 10], ['date', -10, 0]])
-  end
-
-  it 'adds hashes to the array for each transaction in the array' do
-    expect(@statement.list[0]).to be_a(Hash)
+    @statement = described_class.new([['date', 10, 10], ['date', -10, 0]])
   end
 
   it 'creates a hash with a date key and value pair' do
