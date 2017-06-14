@@ -16,10 +16,6 @@ describe Account do
     expect(@account.balance).to eq(90)
   end
 
-  it 'an account has a list of transactions stored in an array' do
-    expect(@account.transactions.length).to eq 1
-  end
-
   it 'prints a statement to the command line' do
     h = "date || credit || debit || balance\n"
     today = DateTime.now.strftime('%d/%m/%Y')

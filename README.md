@@ -20,7 +20,7 @@ date || credit || debit || balance
 
 ## 🏁 Getting started
 ```
-git clone git@github.com:baileytalks/bank-tech-test.git
+git clone git@github.com:baileytalks/bank-ruby.git
 bundle
 ```
 ## Running tests
@@ -42,25 +42,25 @@ Follow these instructions to run the program:
 2. Deposit £10
 ```
 > account.deposit(10)
-=> [{:date=>"12/06/2017", :credit=>10, :debit=>nil, :balance=>10}]
+=> [["14/06/2017", 10, 10]]
 ```
 3. Withdraw £5
 ```
 > account.withdraw(5)
-=> [{:date=>"12/06/2017", :credit=>10, :debit=>nil, :balance=>10}, {:date=>"12/06/2017", :credit=>nil, :debit=>5, :balance=>5}]
+=> [["14/06/2017", 10, 10], ["14/06/2017", -5, 5]]
 ```
-4. Display the balance
+4. Print a statement
+```
+> account.statement
+date || credit || debit || balance
+14/06/2017 ||  || 5.00 || 5.00
+14/06/2017 || 10.00 ||  || 10.00
+ => nil
+```
+5. *Bonus!* Display your balance
 ```
 > account.balance
 => 5
-```
-5. Print a statement
-```
-> account.print
-date || credit || debit || balance
-12/06/2017 ||  || 5.00 || 5.00
-12/06/2017 || 10.00 ||  || 10.00
- => nil
 ```
 
 ## 👨‍👩‍👧‍👦 User stories

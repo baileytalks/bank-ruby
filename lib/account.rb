@@ -1,8 +1,9 @@
+require 'date'
 require './lib/statement.rb'
 
 ## This class has responsibility for holding and managing a balance
 class Account
-  attr_reader :balance, :transactions
+  attr_reader :balance
 
   def initialize
     @balance      = 0
